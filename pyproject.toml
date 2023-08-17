@@ -22,11 +22,14 @@ version = "0.1.0"
 description = ""
 authors = ["Duong Vu"]
 readme = "README.md"
-packages = [{include = "credit_card_fraud_detection"}]
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.11"
 kedro-viz = "^6.3.4"
+jupyterlab = "^4.0.5"
+great-expectations = "^0.17.9"
+jupyter = "^1.0.0"
+seaborn = "^0.12.2"
 
 
 [build-system]

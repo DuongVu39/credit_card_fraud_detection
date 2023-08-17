@@ -45,3 +45,7 @@
 example_iris_data:
   type: pandas.CSVDataSet
   filepath: data/01_raw/iris.csv
+
+credit_card_data:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/creditcard.csv
