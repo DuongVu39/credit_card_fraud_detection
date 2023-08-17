@@ -1,0 +1,34 @@
+[tool.kedro]
+package_name = "fraud_detection"
+project_name = "fraud_detection"
+kedro_init_version = "0.18.12"
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+addopts = """
+--cov-report term-missing \
+--cov src/test -ra"""
+
+[tool.coverage.report]
+fail_under = 0
+show_missing = true
+exclude_lines = ["pragma: no cover", "raise NotImplementedError"]
+
+[tool.poetry]
+name = "credit-card-fraud-detection"
+version = "0.1.0"
+description = ""
+authors = ["Duong Vu"]
+readme = "README.md"
+packages = [{include = "credit_card_fraud_detection"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+kedro-viz = "^6.3.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
